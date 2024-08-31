@@ -32,4 +32,8 @@ A continuación, se describe cada uno de las historias de usuario que se conside
 ![Diagrama de entidad relación](/Imagenes/EntidadRelacion.png)
 
 ## 4. Caso de Uso
+
+```Python
+print("Gaaaaaaaaaaaa")
+```
 ## 5. Mockups
