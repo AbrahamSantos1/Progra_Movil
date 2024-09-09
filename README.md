@@ -9,7 +9,12 @@ El Proyecto Salud es un sistema diseñado para gestionar perfiles de pacientes y
 
 ## 2. Entorno de desarrollo
 
-## 3. Requerimientos funcionales - Historias de Usuario
+## 3. Diagrama de Despliegue
+A continuación, se presenta el Diagrama de Despliegue relacionado los los requerimientos no funcionales
+
+![Diagrama de Despliegue](/Imagenes/DiagramaDespliegue.png)
+
+## 4. Requerimientos funcionales - Historias de Usuario
 A continuación, se describe cada uno de las historias de usuario que se consideró en el proyecto.   
 
 ![HU1](/Historias%20de%20Usuario/1.png)
@@ -30,27 +35,27 @@ A continuación, se describe cada uno de las historias de usuario que se conside
 
 ![HU9](/Historias%20de%20Usuario/9.png)
 
-## 4. Requerimientos no funcionales
+## 5. Requerimientos no funcionales
 Para el proyecto, se considero los siguientes requerimientos no funcionales:
 
-**4.1. Rendimiento:** El sistema debe ser capaz de responder a las consultas en menos de 2 segundos para garantizar una experiencia fluida y debe poder manejar un aumento en el número de usuarios (padres y profesionales de la salud) y en la cantidad de registros médicos sin comprometer el rendimiento
+**5.1. Rendimiento:** El sistema debe ser capaz de responder a las consultas en menos de 2 segundos para garantizar una experiencia fluida y debe poder manejar un aumento en el número de usuarios (padres y profesionales de la salud) y en la cantidad de registros médicos sin comprometer el rendimiento
 
-**4.2. Seguridad:** Toda la información médica y los datos personales de los pacientes deben estar encriptados, tanto en tránsito como en reposo. Además, debe contar con una autenticación y autorización estricta para garantizar que solo los usuarios autorizados (padres y profesionales de la salud) puedan acceder a la información. Finalmente, se debe cumplir con las leyes de protección de datos personales y médicos según la jurisdicción.
+**5.2. Seguridad:** Toda la información médica y los datos personales de los pacientes deben estar encriptados, tanto en tránsito como en reposo. Además, debe contar con una autenticación y autorización estricta para garantizar que solo los usuarios autorizados (padres y profesionales de la salud) puedan acceder a la información. Finalmente, se debe cumplir con las leyes de protección de datos personales y médicos según la jurisdicción.
 
-**4.3. Fiabilidad:**  El sistema debe contar con mecanismos de tolerancia a fallos para minimizar el impacto en caso de errores o caídas del sistema, además debe tener herramientas de monitoreo para detectar y corregir problemas antes de que afecten a los usuarios.
+**5.3. Fiabilidad:**  El sistema debe contar con mecanismos de tolerancia a fallos para minimizar el impacto en caso de errores o caídas del sistema, además debe tener herramientas de monitoreo para detectar y corregir problemas antes de que afecten a los usuarios.
 
-**4.4. Usabilidad:**  Debe seguir las guías de diseño de material design para Flutter, garantizando que la interfaz sea intuitiva y accesible para todo tipo de usuarios. Además, la aplicación debe ser accesible desde diferentes dispositivos (móviles, tabletas, y computadoras) y navegadores. Debe tener soporte para múltiples idiomas para adaptarse a diferentes regiones geográficas.
+**5.4. Usabilidad:**  Debe seguir las guías de diseño de material design para Flutter, garantizando que la interfaz sea intuitiva y accesible para todo tipo de usuarios. Además, la aplicación debe ser accesible desde diferentes dispositivos (móviles, tabletas, y computadoras) y navegadores. Debe tener soporte para múltiples idiomas para adaptarse a diferentes regiones geográficas.
 
-**4.5. Disponibilidad:** El sistema debe estar disponible al menos el 99.9% del tiempo, garantizando un acceso constante para los usuarios, tanto padres como profesionales de la salud. Además, debe contar con implementación de planes de respaldo automático y estrategias de recuperación ante desastres para proteger la integridad de los datos.
+**5.5. Disponibilidad:** El sistema debe estar disponible al menos el 99.9% del tiempo, garantizando un acceso constante para los usuarios, tanto padres como profesionales de la salud. Además, debe contar con implementación de planes de respaldo automático y estrategias de recuperación ante desastres para proteger la integridad de los datos.
 
-## 5. Diagrama Entidad Relación ## 
+## 6. Diagrama Entidad Relación ## 
 Se presentará el diagrama de entidad-relación del proyecto que modela las distintas entidades clave del sistema y las relaciones entre ellas.
 
 ![Diagrama de entidad relación](/Imagenes/EntidadRelacion.png)
 
  A continuación, se detallan las principales entidades:
 
-**5.1. Entidades Principales**
+**6.1. Entidades Principales**
 
 **padres:**  Contiene la información personal de los padres, como nombre, apellidos, DNI, género y fecha de nacimiento. Los padres están vinculados a usuarios del sistema.
 
@@ -70,7 +75,7 @@ Se presentará el diagrama de entidad-relación del proyecto que modela las dist
 
 **citas_vacunacion:** Guarda la información de las citas futuras de vacunación, permitiendo a los usuarios programar cuándo y dónde se realizarán las vacunaciones.
 
-**5.2 Relaciones entre entidades:**
+**6.2 Relaciones entre entidades:**
 
 **padres - usuarios:** Un padre tiene un perfil de usuario en el sistema, lo que le permite acceder al sistema con su email y contraseña.
 
@@ -88,17 +93,17 @@ Se presentará el diagrama de entidad-relación del proyecto que modela las dist
 
 **perfil_pacientes - citas_vacunacion:** Cada paciente puede tener citas futuras programadas para la aplicación de vacunas.
 
-## 6. Caso de Uso ##
+## 7. Caso de Uso ##
 A continuación, se presenta el diagrama del caso de uso del proyecto:
 
 ![Diagrama de caso de Uso](/CasodeUso/1.png)
 
-## 7. Descripción del Caso de Uso ##
+## 8. Descripción del Caso de Uso ##
 A continuación, se dará una descripción del caso de uso presentado en el punto 6.
 
-**7.1. Actores**
+**8.1. Actores**
 
-**7.1.1. Padre:**
+**8.1.1. Padre:**
 
 **Consulta esquema de vacunación:** El padre puede acceder al sistema para revisar el calendario o esquema de vacunación del paciente bajo su cuidado.
 
@@ -108,13 +113,13 @@ A continuación, se dará una descripción del caso de uso presentado en el punt
 
 **Registra usuario:** En este caso, el padre puede crear nuevos usuarios en el sistema, lo que podría implicar agregar más personas relacionadas con el cuidado del paciente o crear un perfil de usuario para sí mismo.
 
-**7.1.2. Paciente:**
+**8.1.2. Paciente:**
 
 **Consulta su perfil:** El paciente puede ingresar al sistema y revisar su propio perfil, el cual podría contener información como su historial médico, esquema de vacunación, alergias, etc.
 
 **Registrar/actualizar sus datos médicos:** El paciente tiene la capacidad de introducir o actualizar sus propios datos médicos dentro del sistema, como el registro de síntomas, información sobre visitas al médico, resultados de pruebas, entre otros.
 
-**7.1.3. Profesional de la Salud:**
+**8.1.3. Profesional de la Salud:**
 
 **Registro del profesional:** El profesional de la salud puede registrar su perfil en el sistema, lo que probablemente implica registrar su licencia médica, especialidad y otros datos relevantes.
 
@@ -122,7 +127,7 @@ A continuación, se dará una descripción del caso de uso presentado en el punt
 
 **Programa citas de vacunación:** El profesional puede gestionar y programar las citas de vacunación del paciente, lo que incluye definir la fecha, hora y tipo de vacuna que se administrará.
 
-**7.2. Casos de Uso:**
+**8.2. Casos de Uso:**
 
 **Consultar esquema de vacunación:** Caso de uso general que permite a los usuarios (padres, pacientes o profesionales de la salud) visualizar el calendario de vacunación del paciente.
 
