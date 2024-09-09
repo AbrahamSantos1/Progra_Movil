@@ -10,7 +10,7 @@ El Proyecto Salud es un sistema diseñado para gestionar perfiles de pacientes y
 ## 2. Entorno de desarrollo
 
 ## 3. Diagrama de Despliegue
-A continuación, se presenta el Diagrama de Despliegue relacionado los los requerimientos no funcionales
+A continuación, se presenta el Diagrama de Despliegue relacionado con los requerimientos no funcionales
 
 ![Diagrama de Despliegue](/Imagenes/DiagramaDespliegue.png)
 
