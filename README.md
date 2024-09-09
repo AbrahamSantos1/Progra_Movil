@@ -93,7 +93,7 @@ Se presentará el diagrama de entidad-relación del proyecto que modela las dist
 
 **perfil_pacientes - citas_vacunacion:** Cada paciente puede tener citas futuras programadas para la aplicación de vacunas.
 
-## 7. Caso de Uso ##
+## 7. Diagrama de Caso de Uso ##
 A continuación, se presenta el diagrama del caso de uso del proyecto:
 
 ![Diagrama de caso de Uso](/CasodeUso/1.png)
@@ -143,7 +143,7 @@ A continuación, se dará una descripción del caso de uso presentado en el punt
 
 **Programar citas de vacunación:** El profesional de la salud gestiona las citas de vacunación del paciente, asegurando que el esquema de vacunación esté actualizado y bien planificado.
 
-**Relaciones:**
+**8.3 Relaciones:**
 
 Los actores están conectados a los casos de uso mediante flechas que indican sus interacciones con el sistema. Estas flechas representan las acciones que cada actor puede realizar dentro del sistema de salud.
 
