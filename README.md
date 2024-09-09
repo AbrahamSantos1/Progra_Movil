@@ -94,7 +94,7 @@ A continuación, se presenta el diagrama del caso de uso del proyecto:
 ![Diagrama de caso de Uso](/CasodeUso/1.png)
 
 ## 7. Descripción del Caso de Uso ##
-A continuación, se dará una descripción del caso de uso presentado en el punto 5.
+A continuación, se dará una descripción del caso de uso presentado en el punto 6.
 
 **7.1. Actores**
 
