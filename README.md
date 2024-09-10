@@ -35,8 +35,7 @@ El Proyecto Salud es un sistema diseñado para gestionar perfiles de pacientes y
     - **spring-boot-starter-data-jpa**: Facilita la persistencia de datos mediante JPA.
     - **spring-boot-starter-security**: Proporciona autenticación y control de acceso.
     - **spring-boot-starter-validation**: Validación de datos en el lado del servidor.
-    - **spring-boot-starter-web**: Habilita la creación de servicios RESTful.
-    - **spring-boot-starter-web-services**: Habilita servicios web SOAP.
+    - **spring-boot-starter-web**: Habilita la creación de servicios RESTful.    
     - **spring-boot-devtools**: Herramientas para el desarrollo ágil, como reinicios automáticos.
     - **Lombok**: Facilita la escritura de código Java reduciendo la necesidad de escribir boilerplate como getters y setters.
 
