@@ -1,4 +1,31 @@
-# Aplicación dedicada al Control de la Salud Infantil 
+# Trabajo de Programación Movil - Grupo 7
+
+
+![Diagrama de Despliegue](/Imagenes/ulima.png)
+
+
+- [Integrantes:](#)
+- Alonso Armando Caceres Gonzales
+- Alvaro Moises Molina Caviedes
+- Fernando Abraham Santos Dextre
+- Rodrigo Fernando Sulca Ramirez
+- Geroge Roossevelt Zuñiga Mariño
+
+# Indice
+
+1. [Introducción](#1-introducción)
+2. [Entorno de Desarrollo](#2-entorno-de-desarrollo)
+3. [Diagrama de Despliegue](#3-diagrama-de-despliegue)
+4. [Requerimientos funcionales](#4-requerimientos-funcionales)
+5. [Requerimientos no funcionales](#5-requerimientos-no-funcionales)
+6. [Diagrama Entidad Relación](#6-diagrama-entidad-relación)
+7. [Diagrama de Caso de Uso](#7-diagrama-de-caso-de-uso)
+8. [Descripción del Caso de Uso](#8-descripción-del-caso-de-uso)
+9. [Mockups](#9-mockups)
+
+#
+
+# Aplicación Dedicada al Control de la Salud Infantil 
 
 ## 1. Introducción
 
@@ -8,13 +35,74 @@ El propósito de este documento es proporcionar una descripción detallada del d
 El Proyecto Salud es un sistema diseñado para gestionar perfiles de pacientes y sus registros médicos. El sistema está orientado a padres y profesionales de la salud, proporcionando una interfaz para registrar, actualizar y consultar información médica de los pacientes. Los usuarios principales del sistema son padres que desean llevar un registro detallado de la salud de sus hijos y profesionales de la salud que necesitan acceder y actualizar estos registros.
 
 ## 2. Entorno de desarrollo
+#### 2.1 Elección de Herramientas
+
+- **Java (OpenJDK)**: 
+  - Versión utilizada: **OpenJDK 17**
+
+  - Instalacion:
+
+    Descargar version de aqui
+
+    [Versiones OpenJDK](https://jdk.java.net/archive/])
+
+  - Comando para verificar la versión:
+
+    ```bash
+    ~$ java --version
+    openjdk 17 2021-09-14
+    OpenJDK Runtime Environment (build 17+35-2724)
+    OpenJDK 64-Bit Server VM (build 17+35-2724, mixed mode, sharing)
+    ```
+
+- **Spring Boot**: Framework utilizado para el desarrollo del backend del proyecto.
+  - **Versión utilizada**: 2.7.4
+  - Dependencias clave incluidas en el proyecto:
+    - **spring-boot-starter-actuator**: Proporciona monitoreo y métricas para la aplicación.
+    - **spring-boot-starter-data-jpa**: Facilita la persistencia de datos mediante JPA.
+    - **spring-boot-starter-security**: Proporciona autenticación y control de acceso.
+    - **spring-boot-starter-validation**: Validación de datos en el lado del servidor.
+    - **spring-boot-starter-web**: Habilita la creación de servicios RESTful.    
+    - **spring-boot-devtools**: Herramientas para el desarrollo ágil, como reinicios automáticos.
+    - **Lombok**: Facilita la escritura de código Java reduciendo la necesidad de escribir boilerplate como getters y setters.
+
+#### 2.2 Base de Datos
+
+- **PostgreSQL**:
+  - Conexión de la aplicación al motor de base de datos PostgreSQL utilizando el driver incluido en el archivo `pom.xml`:
+    ```xml
+    <dependency>
+      <groupId>org.postgresql</groupId>
+      <artifactId>postgresql</artifactId>
+      <scope>runtime</scope>
+    </dependency>
+    ```
+  - **Configuración de conexión**: La conexión se establece en el archivo `application.yml` o `application.properties` para interactuar con la base de datos `PostgreSQL`.
+
+#### 2.3 Pruebas
+
+- Se incluyen dependencias para realizar pruebas:
+  - **spring-boot-starter-test**: Proporciona herramientas para realizar pruebas de integración y unitarias en el proyecto.
+  - **spring-security-test**: Proporciona herramientas para realizar pruebas de seguridad en el proyecto.
+
+#### 2.4 Documentación del API
+
+Para la documentación del proyecto, es recomendable agregar **SpringDoc OpenAPI** o **Swagger**. Puedes incluirlo agregando esta dependencia en el archivo `pom.xml`:
+
+```xml
+<dependency>
+  <groupId>org.springdoc</groupId>
+  <artifactId>springdoc-openapi-ui</artifactId>
+  <version>1.6.6</version>
+</dependency>
+```
 
 ## 3. Diagrama de Despliegue
 A continuación, se presenta el Diagrama de Despliegue relacionado con los requerimientos no funcionales
 
 ![Diagrama de Despliegue](/Imagenes/DiagramaDespliegue.png)
 
-## 4. Requerimientos funcionales - Historias de Usuario
+## 4. Requerimientos funcionales
 A continuación, se describe cada uno de las historias de usuario que se consideró en el proyecto.   
 
 ![HU1](/Historias%20de%20Usuario/1.png)
@@ -153,3 +241,4 @@ Paciente tiene un rol más activo en la gestión de su propio perfil y datos mé
 
 Profesional de la salud se centra en tareas administrativas y clínicas relacionadas con el mantenimiento del esquema de vacunación y la gestión de citas
 
+## 9. Mockups ##
