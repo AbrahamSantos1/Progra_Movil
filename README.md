@@ -132,9 +132,9 @@ Para el proyecto, se considero los siguientes requerimientos no funcionales:
 
 -  El sistema debe contar con mecanismos de tolerancia a fallos para minimizar el impacto en caso de errores o caídas del sistema, además debe tener herramientas de monitoreo para detectar y corregir problemas antes de que afecten a los usuarios.
 
-- La aplicación se está desarrollando principalmente en un entorno Java con Spring Boot en el backend y PostgreSQL como motor de base de datos
+- La aplicación se está desarrollando principalmente en un entorno Java con Spring Boot en el backend (Docker) y PostgreSQL como motor de base de datos
 
-- La aplicación se desplegará en Android o Docker.
+- La aplicación se desplegará en nube(AWS) o de manera local.
 - La aplicación debe ser accesible desde diferentes dispositivos (móviles, tabletas, y computadoras) y navegadores. Debe tener soporte para múltiples idiomas para adaptarse a diferentes regiones geográficas.
 
 - El sistema debe estar disponible al menos el 99.9% del tiempo, garantizando un acceso constante para los usuarios, tanto padres como profesionales de la salud. Además, debe contar con implementación de planes de respaldo automático y estrategias de recuperación ante desastres para proteger la integridad de los datos.
