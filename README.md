@@ -34,7 +34,7 @@ El propósito de este documento es proporcionar una descripción detallada del d
 ## 1.1. Visión general del sistema
 El Proyecto Salud es un sistema diseñado para gestionar perfiles de pacientes y sus registros médicos. El sistema está orientado a padres y profesionales de la salud, proporcionando una interfaz para registrar, actualizar y consultar información médica de los pacientes. Los usuarios principales del sistema son padres que desean llevar un registro detallado de la salud de sus hijos y profesionales de la salud que necesitan acceder y actualizar estos registros.
 
-## 2. Entorno de desarrollo
+## 2. Entorno de Desarrollo
 #### 2.1 Elección de Herramientas
 
 - **Java (OpenJDK)**: 
@@ -126,15 +126,19 @@ A continuación, se describe cada uno de las historias de usuario que se conside
 ## 5. Requerimientos no funcionales
 Para el proyecto, se considero los siguientes requerimientos no funcionales:
 
-**5.1. Rendimiento:** El sistema debe ser capaz de responder a las consultas en menos de 2 segundos para garantizar una experiencia fluida y debe poder manejar un aumento en el número de usuarios (padres y profesionales de la salud) y en la cantidad de registros médicos sin comprometer el rendimiento
+- El sistema debe ser capaz de responder a las consultas en menos de 2 segundos para garantizar una experiencia fluida y debe poder manejar un aumento en el número de usuarios (padres y profesionales de la salud) y en la cantidad de registros médicos sin comprometer el rendimiento
 
-**5.2. Seguridad:** Toda la información médica y los datos personales de los pacientes deben estar encriptados, tanto en tránsito como en reposo. Además, debe contar con una autenticación y autorización estricta para garantizar que solo los usuarios autorizados (padres y profesionales de la salud) puedan acceder a la información. Finalmente, se debe cumplir con las leyes de protección de datos personales y médicos según la jurisdicción.
+- Toda la información médica y los datos personales de los pacientes deben estar encriptados. Además, debe contar con una autenticación y autorización estricta para garantizar que solo los usuarios autorizados (padres y profesionales de la salud) puedan acceder a la información.
 
-**5.3. Fiabilidad:**  El sistema debe contar con mecanismos de tolerancia a fallos para minimizar el impacto en caso de errores o caídas del sistema, además debe tener herramientas de monitoreo para detectar y corregir problemas antes de que afecten a los usuarios.
+-  El sistema debe contar con mecanismos de tolerancia a fallos para minimizar el impacto en caso de errores o caídas del sistema, además debe tener herramientas de monitoreo para detectar y corregir problemas antes de que afecten a los usuarios.
 
-**5.4. Usabilidad:**  Debe seguir las guías de diseño de material design para Flutter, garantizando que la interfaz sea intuitiva y accesible para todo tipo de usuarios. Además, la aplicación debe ser accesible desde diferentes dispositivos (móviles, tabletas, y computadoras) y navegadores. Debe tener soporte para múltiples idiomas para adaptarse a diferentes regiones geográficas.
+- La aplicación se está desarrollando principalmente en un entorno Java con Spring Boot en el backend y PostgreSQL como motor de base de datos
 
-**5.5. Disponibilidad:** El sistema debe estar disponible al menos el 99.9% del tiempo, garantizando un acceso constante para los usuarios, tanto padres como profesionales de la salud. Además, debe contar con implementación de planes de respaldo automático y estrategias de recuperación ante desastres para proteger la integridad de los datos.
+- La aplicación se desplegará en Android o Docker.
+- La aplicación debe ser accesible desde diferentes dispositivos (móviles, tabletas, y computadoras) y navegadores. Debe tener soporte para múltiples idiomas para adaptarse a diferentes regiones geográficas.
+
+- El sistema debe estar disponible al menos el 99.9% del tiempo, garantizando un acceso constante para los usuarios, tanto padres como profesionales de la salud. Además, debe contar con implementación de planes de respaldo automático y estrategias de recuperación ante desastres para proteger la integridad de los datos.
+
 
 ## 6. Diagrama Entidad Relación ## 
 Se presentará el diagrama de entidad-relación del proyecto que modela las distintas entidades clave del sistema y las relaciones entre ellas.
@@ -242,3 +246,35 @@ Paciente tiene un rol más activo en la gestión de su propio perfil y datos mé
 Profesional de la salud se centra en tareas administrativas y clínicas relacionadas con el mantenimiento del esquema de vacunación y la gestión de citas
 
 ## 9. Mockups ##
+**9.1. Login**
+
+![Diagrama de caso de Uso](/Mockups/1.png)
+
+**9.2. Crear Cuenta**
+
+![Diagrama de caso de Uso](/Mockups/2.png)
+
+**9.3. Principal**
+
+![Diagrama de caso de Uso](/Mockups/6.png)
+
+**9.4. Perfil**
+
+![Diagrama de caso de Uso](/Mockups/3.png)
+
+**9.5. Modificar Perfil**
+
+![Diagrama de caso de Uso](/Mockups/4.png)
+
+**9.6. Reservar Vacunas**
+
+![Diagrama de caso de Uso](/Mockups/5.png)
+
+**9.7. Perfil Profesional**
+
+![Diagrama de caso de Uso](/Mockups/7.png)
+
+![Diagrama de caso de Uso](/Mockups/8.png)
+
+
+
