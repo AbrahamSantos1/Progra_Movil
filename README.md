@@ -4,12 +4,12 @@
 ![Diagrama de Despliegue](/Imagenes/ulima.png)
 
 
-- [Integrantes:](#)
-- Alonso Armando Caceres Gonzales
-- Alvaro Moises Molina Caviedes
-- Fernando Abraham Santos Dextre
-- Rodrigo Fernando Sulca Ramirez
-- Geroge Roossevelt Zuñiga Mariño
+### [Integrantes:](#)
+  - Alonso Armando Caceres Gonzales
+  - Alvaro Moises Molina Caviedes
+  - Fernando Abraham Santos Dextre
+  - Rodrigo Fernando Sulca Ramirez
+  - Geroge Roossevelt Zuñiga Mariño
 
 # Indice
 
@@ -23,7 +23,6 @@
 8. [Descripción del Caso de Uso](#8-descripción-del-caso-de-uso)
 9. [Mockups](#9-mockups)
 
-#
 
 # Aplicación Dedicada al Control de la Salud Infantil 
 
@@ -37,27 +36,45 @@ El Proyecto Salud es un sistema diseñado para gestionar perfiles de pacientes y
 ## 2. Entorno de Desarrollo
 #### 2.1 Elección de Herramientas
 
-- **Java (OpenJDK)**: 
+- **Java (OpenJDK)**:
   - Versión utilizada: **OpenJDK 17**
 
   - Instalacion:
 
-    Descargar version de aqui
+    Hay varias maneras de instalar openjdk, pero explicaremos las mas universal tomando en cuenta que estamos en sistema Linux (BTW i use Gentoo):
 
-    [Versiones OpenJDK](https://jdk.java.net/archive/])
+    1. Descargar version de aqui: [Versiones OpenJDK](https://jdk.java.net/archive/])
 
-  - Comando para verificar la versión:
+    2. Descomprimir el archivo: Para ello ejecutamos el comando
 
-    ```bash
-    ~$ java --version
-    openjdk 17 2021-09-14
-    OpenJDK Runtime Environment (build 17+35-2724)
-    OpenJDK 64-Bit Server VM (build 17+35-2724, mixed mode, sharing)
-    ```
+        ```
+        $ tar -xvf openjdk-17_linux-x64_bin.tar.gz
+        ```
+
+    3. Añadimos la ruta de la carpeta `jdk-17.0.7/bin` que acabamos de descomprimir. Para ello añadimos la siguiente linea al archivo `~/.bashrc` o `~/.zshrc` si usas zsh
+
+        ```bash
+        export PATH="ruta/al/jdk-17.0.7/bin:$PATH"
+        ```
+
+        Actualizamos la configuracion: para este caso `~/.zshrc`
+
+        ```
+        $ source .zshrc
+        ```
+
+    4. Verificamos la versión:
+
+        ```
+        $ java --version
+        openjdk 17 2021-09-14
+        OpenJDK Runtime Environment (build 17+35-2724)
+        OpenJDK 64-Bit Server VM (build 17+35-2724, mixed mode, sharing)
+        ```
 
 - **Spring Boot**: Framework utilizado para el desarrollo del backend del proyecto.
   - **Versión utilizada**: 2.7.4
-  - Dependencias clave incluidas en el proyecto:
+  - Dependencias incluidas en el proyecto:
     - **spring-boot-starter-actuator**: Proporciona monitoreo y métricas para la aplicación.
     - **spring-boot-starter-data-jpa**: Facilita la persistencia de datos mediante JPA.
     - **spring-boot-starter-security**: Proporciona autenticación y control de acceso.
@@ -87,7 +104,7 @@ El Proyecto Salud es un sistema diseñado para gestionar perfiles de pacientes y
 
 #### 2.4 Documentación del API
 
-Para la documentación del proyecto, es recomendable agregar **SpringDoc OpenAPI** o **Swagger**. Puedes incluirlo agregando esta dependencia en el archivo `pom.xml`:
+Para la documentación del proyecto, es recomendable agregar **SpringDoc OpenAPI** o **Swagger**. Para incluirlo se debe agrega esta dependencia en el archivo `pom.xml`:
 
 ```xml
 <dependency>
